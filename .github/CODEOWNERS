@@ -1,5 +1,7 @@
 # Repo-wide default reviewers.
 # Per the 2026-05-18 joint maintainer agreement (a2aproject/A2A#1737 + #1832).
 # Additional committers added per scope as upstream contributors land their PRs.
+# @brainspacer (BidAngel) added per the #1832 commitment; tighten to the
+# procurement-fragment files + crosswalk directories once those files land.
 
-*           @eriknewton @cmagorr1
+*           @eriknewton @cmagorr1 @brainspacer
