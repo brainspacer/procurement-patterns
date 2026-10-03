@@ -1,0 +1,34 @@
+{
+  "initiator": {
+    "agent_id": "supplier-bid-agent",
+    "did": "did:web:supplier.example",
+    "endpoint": "https://supplier.example/api/a2cn",
+    "organization_name": "Supplier Example LLC",
+    "verification_method": "did:web:supplier.example#key-1"
+  },
+  "initiator_mandate": {
+    "agent_id": "supplier-bid-agent",
+    "authorized_deal_types": [
+      "services_procurement"
+    ],
+    "mandate_type": "declared",
+    "max_commitment_currency": "USD",
+    "max_commitment_value": 20000000,
+    "principal_did": "did:web:supplier.example",
+    "principal_organization": "Supplier Example LLC",
+    "scope_description": "Bid and BAFO submission for ocds-bidangel-0001-bafo-fixture",
+    "valid_from": "2026-05-01T00:00:00Z",
+    "valid_until": "2026-05-31T23:59:59Z"
+  },
+  "message_id": "bafo-init-0001",
+  "message_type": "session_init",
+  "protocol_version": "0.3",
+  "session_params": {
+    "currency": "USD",
+    "deal_type": "services_procurement",
+    "max_rounds": 4,
+    "round_timeout_seconds": 14400,
+    "session_timeout_seconds": 86400,
+    "subject": "BAFO round for ocds-bidangel-0001-bafo-fixture"
+  }
+}

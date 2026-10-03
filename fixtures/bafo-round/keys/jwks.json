@@ -1,0 +1,25 @@
+{
+  "keys": [
+    {
+      "crv": "Ed25519",
+      "kid": "did:web:supplier.example#key-1",
+      "kty": "OKP",
+      "use": "sig",
+      "x": "PEBKIffe_pWQzqQxr4KG-pJ2R4eh4810_cHLRKkYIgA"
+    },
+    {
+      "crv": "Ed25519",
+      "kid": "did:web:acme.example#key-1",
+      "kty": "OKP",
+      "use": "sig",
+      "x": "yEvY2Mm1OdeE8esBl3DVTrUCbPCcQ8w3P-S4q02G80c"
+    },
+    {
+      "crv": "Ed25519",
+      "kid": "did:web:acme.example#procurement-lead",
+      "kty": "OKP",
+      "use": "sig",
+      "x": "mtOaIm1X9edzUgFBKinLU20lA3HB4y0xIVtjq7a3w9k"
+    }
+  ]
+}

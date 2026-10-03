@@ -1,0 +1,41 @@
+{
+  "expires_at": "2026-05-13T17:00:00Z",
+  "message_id": "bafo-offer-0001",
+  "message_type": "offer",
+  "protocol_act_hash": "poYFNQ7Zndn64QLcX2rQ9A6BuliPICVGfyQJeJd-ZME",
+  "protocol_act_signature": "eyJhbGciOiJFZERTQSIsImtpZCI6ImRpZDp3ZWI6c3VwcGxpZXIuZXhhbXBsZSNrZXktMSJ9.cG9ZRk5RN1puZG42NFFMY1gyclE5QTZCdWxpUElDVkdmeVFKZUpkLVpNRQ.SJZi72ahjmhdhsK49p3Wr0xiMsAqyYeagPzvjA1ks5UCZv7V6w16L_qSvTYlvY6-Xdp4v9mTRW_HWSPfoeG9Aw",
+  "round_number": 1,
+  "sender_agent_id": "supplier-bid-agent",
+  "sender_did": "did:web:supplier.example",
+  "sender_verification_method": "did:web:supplier.example#key-1",
+  "sequence_number": 1,
+  "session_id": "bafo-2026-05-12-001",
+  "terms": {
+    "currency": "USD",
+    "custom_terms": {
+      "a2a_procurement_profile": {
+        "extension_uri": "https://spec.bidangelai.com/v0.1/",
+        "opportunity_external_id": "ocds-bidangel-0001-bafo-fixture",
+        "requirement": {
+          "@context": "https://spec.bidangelai.com/contexts/v0.1/requirement.context.jsonld",
+          "@type": "Requirement",
+          "body": "Supplier confirms 24x7 on-site coverage for the optional Y3 / Y4 extension years, contingent on the maintenance-window adjustment described in the original solicitation section C.5.2.",
+          "dueAt": "2026-05-13T17:00:00Z",
+          "evidenceNeededSummary": "Signed staffing plan and a sample on-call rotation for Y3.",
+          "externalId": "BAFO-SOW-CLARIFICATION-3.2",
+          "mandatoryFlag": true,
+          "perRowKey": "BAFO-2026-05-12-SCOPE",
+          "requirementType": "technical",
+          "requirementTypeCode": "FAR-52.246-4",
+          "sectionRef": "C.5.2 / BAFO Round 1",
+          "standardSchema": null,
+          "subType": "narrative",
+          "title": "BAFO clarification: extended maintenance window",
+          "valueConstraints": null
+        }
+      }
+    },
+    "total_value": 15000000
+  },
+  "timestamp": "2026-05-12T14:05:00Z"
+}

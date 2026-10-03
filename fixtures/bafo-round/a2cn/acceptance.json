@@ -1,0 +1,15 @@
+{
+  "acceptance_signature": "eyJhbGciOiJFZERTQSIsImtpZCI6ImRpZDp3ZWI6YWNtZS5leGFtcGxlI2tleS0xIn0.UlBPcHhYTHRnaUc1a0k4aXNIQWttXzNCSENFbEpfdmpXQ2xNeTJ2VmhZQQ.iIblaiSMXfcgWVUGSrP-ccex4iHMnewp1nIINAf8H7WitSyBDWS0Jn72-BzeDI0Fgrzzw4OiJBnpHqlCynhMCQ",
+  "accepted_offer_id": "bafo-offer-0001",
+  "accepted_protocol_act_hash": "poYFNQ7Zndn64QLcX2rQ9A6BuliPICVGfyQJeJd-ZME",
+  "in_reply_to": "bafo-offer-0001",
+  "message_id": "bafo-acceptance-0001",
+  "message_type": "acceptance",
+  "round_number": 1,
+  "sender_agent_id": "acme-sourcing-agent",
+  "sender_did": "did:web:acme.example",
+  "sender_verification_method": "did:web:acme.example#key-1",
+  "sequence_number": 2,
+  "session_id": "bafo-2026-05-12-001",
+  "timestamp": "2026-05-12T14:20:00Z"
+}

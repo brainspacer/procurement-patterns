@@ -1,0 +1,37 @@
+{
+  "approver": {
+    "identity": "did:web:acme.example#procurement-lead",
+    "role": "procurement_authority"
+  },
+  "artifact_type": "ApprovalReceipt",
+  "expires_at": "2026-05-12T15:22:08Z",
+  "id": "urn:concordia:receipt:bafo-fixture-001",
+  "issued_at": "2026-05-12T14:22:08Z",
+  "references": [
+    {
+      "id": "a2cn:session:bafo-2026-05-12-001",
+      "relationship": "approves",
+      "type": "negotiation_session"
+    },
+    {
+      "id": "a2cn:mandate:m-2026-05-12-0042",
+      "relationship": "fulfills",
+      "type": "mandate"
+    },
+    {
+      "id": "ocds-bidangel-0001-bafo-fixture",
+      "relationship": "satisfies",
+      "type": "opportunity"
+    }
+  ],
+  "scope": {
+    "amount": "150000.00 USD",
+    "decision": "approve",
+    "offer_hash": "sha256:a68605350ed99dd9fae102dc5f6ad0f40e81ba588f2025467f240978977e64c1",
+    "threshold_crossed": "100000.00 USD"
+  },
+  "signature": {
+    "alg": "Ed25519",
+    "value": "Jw2olFQY47phpO7uzohvXNbRVNdNuNsoKoD00AhV2rQUSy1kpdsd0DLqJM7uOneDha5QmhIbtPAJFSF4bI23AA=="
+  }
+}

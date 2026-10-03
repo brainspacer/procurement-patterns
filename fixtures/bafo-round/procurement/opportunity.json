@@ -1,0 +1,29 @@
+{
+  "@context": "https://spec.bidangelai.com/contexts/v0.1/opportunity.context.jsonld",
+  "@type": "Opportunity",
+  "buyerRef": {
+    "canonicalName": "Acme Contracting Authority",
+    "countryCode": "US",
+    "legalIdentifier": null,
+    "legalIdentifierScheme": null,
+    "parentName": null
+  },
+  "canonicalTitle": "Facility systems maintenance, base year plus four option years",
+  "contractVehicle": null,
+  "currency": "USD",
+  "dueAt": "2026-05-13T17:00:00Z",
+  "estimatedValueHigh": 200000,
+  "estimatedValueLow": 100000,
+  "externalId": "ocds-bidangel-0001-bafo-fixture",
+  "geography": "US",
+  "lotRef": null,
+  "noticeId": "BAFO-FIXTURE-NOTICE-0001",
+  "opportunityType": "services",
+  "opportunityTypeCode": null,
+  "perRowKey": "BAFO-FIXTURE-OPP-0001",
+  "primaryCategoryCode": "541513",
+  "primaryCategoryScheme": "naics",
+  "publishAt": "2026-04-14T13:00:00Z",
+  "status": "active",
+  "summary": "On-site maintenance of facility control systems. Best-and-final-offer round open."
+}

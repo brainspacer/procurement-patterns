@@ -1,0 +1,61 @@
+{
+  "a2cn": {
+    "on_acceptance": {
+      "approval_pending_offer_hash": "poYFNQ7Zndn64QLcX2rQ9A6BuliPICVGfyQJeJd-ZME",
+      "approval_pending_offer_id": "bafo-offer-0001",
+      "current_turn": "responder",
+      "state": "AWAITING_HUMAN_APPROVAL"
+    },
+    "on_approval_receipt": {
+      "approval_receipt_id": "urn:concordia:receipt:bafo-fixture-001",
+      "current_turn": "none",
+      "state": "COMPLETED"
+    }
+  },
+  "concordia": {
+    "approver": "did:web:acme.example#procurement-lead",
+    "decision": "approve",
+    "valid": true
+  },
+  "evaluation_time": "2026-05-12T14:30:00Z",
+  "hashes": {
+    "a2cn_protocol_act_hash": "poYFNQ7Zndn64QLcX2rQ9A6BuliPICVGfyQJeJd-ZME",
+    "concordia_offer_hash": "sha256:a68605350ed99dd9fae102dc5f6ad0f40e81ba588f2025467f240978977e64c1",
+    "offer_protocol_act_sha256_hex": "a68605350ed99dd9fae102dc5f6ad0f40e81ba588f2025467f240978977e64c1"
+  },
+  "negative_cases": [
+    {
+      "expect": "offer_hash_mismatch",
+      "name": "offer_amount_tampered"
+    },
+    {
+      "expect": "signature_invalid",
+      "name": "receipt_signature_tampered"
+    },
+    {
+      "expect": "expired",
+      "name": "evaluated_after_expiry"
+    },
+    {
+      "expect": "unauthorized_approver",
+      "name": "approver_not_in_mandate"
+    }
+  ],
+  "references": [
+    {
+      "id": "a2cn:session:bafo-2026-05-12-001",
+      "relationship": "approves",
+      "resolves_to": "a2cn/session_ack.json#/session_id"
+    },
+    {
+      "id": "a2cn:mandate:m-2026-05-12-0042",
+      "relationship": "fulfills",
+      "resolves_to": "a2cn/session_ack.json#/responder_mandate/mandate_id"
+    },
+    {
+      "id": "ocds-bidangel-0001-bafo-fixture",
+      "relationship": "satisfies",
+      "resolves_to": "procurement/opportunity.json#/externalId"
+    }
+  ]
+}

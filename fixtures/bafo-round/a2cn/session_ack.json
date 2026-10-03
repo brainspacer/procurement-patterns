@@ -1,0 +1,42 @@
+{
+  "current_turn": "initiator",
+  "in_reply_to": "bafo-init-0001",
+  "message_id": "bafo-ack-0001",
+  "message_type": "session_ack",
+  "protocol_version": "0.3",
+  "responder": {
+    "agent_id": "acme-sourcing-agent",
+    "did": "did:web:acme.example",
+    "endpoint": "https://acme.example/api/a2cn",
+    "organization_name": "Acme Contracting Authority",
+    "verification_method": "did:web:acme.example#key-1"
+  },
+  "responder_mandate": {
+    "agent_id": "acme-sourcing-agent",
+    "approval_operator_dids": [
+      "did:web:acme.example#procurement-lead"
+    ],
+    "authorized_deal_types": [
+      "services_procurement"
+    ],
+    "mandate_id": "a2cn:mandate:m-2026-05-12-0042",
+    "mandate_type": "declared",
+    "max_commitment_currency": "USD",
+    "max_commitment_value": 20000000,
+    "principal_did": "did:web:acme.example",
+    "principal_organization": "Acme Contracting Authority",
+    "requires_human_approval_above": 10000000,
+    "scope_description": "Evaluate and accept BAFO offers for ocds-bidangel-0001-bafo-fixture",
+    "valid_from": "2026-05-12T00:00:00Z",
+    "valid_until": "2026-05-12T23:59:59Z"
+  },
+  "session_created_at": "2026-05-12T14:00:00Z",
+  "session_id": "bafo-2026-05-12-001",
+  "session_params_accepted": {
+    "currency": "USD",
+    "deal_type": "services_procurement",
+    "max_rounds": 4,
+    "round_timeout_seconds": 14400,
+    "session_timeout_seconds": 86400
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "@context": "https://spec.bidangelai.com/contexts/v0.1/requirement.context.jsonld",
+  "@type": "Requirement",
+  "body": "Supplier confirms 24x7 on-site coverage for the optional Y3 / Y4 extension years, contingent on the maintenance-window adjustment described in the original solicitation section C.5.2.",
+  "dueAt": "2026-05-13T17:00:00Z",
+  "evidenceNeededSummary": "Signed staffing plan and a sample on-call rotation for Y3.",
+  "externalId": "BAFO-SOW-CLARIFICATION-3.2",
+  "mandatoryFlag": true,
+  "perRowKey": "BAFO-2026-05-12-SCOPE",
+  "requirementType": "technical",
+  "requirementTypeCode": "FAR-52.246-4",
+  "sectionRef": "C.5.2 / BAFO Round 1",
+  "standardSchema": null,
+  "subType": "narrative",
+  "title": "BAFO clarification: extended maintenance window",
+  "valueConstraints": null
+}
