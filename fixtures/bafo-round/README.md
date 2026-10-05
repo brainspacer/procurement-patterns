@@ -98,4 +98,4 @@ The receipt also gained a `fulfills` reference to the mandate, which A2CN §14.1
 - **UBL round-trip of the requirement payload** (acceptance criterion 1 of issue #4). It needs a UBL adapter and projection that do not exist yet.
 - **A Concordia wire envelope.** The receipt is a standalone signed artifact, which is how §9.6.4b defines it.
 - **DID resolution.** Keys come from `keys/jwks.json`; nothing is fetched.
-- **A `deny` receipt, receipt expiry and re-approval, and `RejectionRecord`.** Each is a separate fixture.
+- **A `deny` receipt, and receipt expiry and re-approval.** Each is a separate fixture.
