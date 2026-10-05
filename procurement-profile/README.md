@@ -1,13 +1,12 @@
-# A2A Procurement Profile
+# A2A Procurement Profile: payload fragments
 
-Registration of the A2A Procurement Profile in the joint pattern library. The profile defines procurement payload semantics for agent-to-agent traffic: four canonical fragments, each layered on existing UBL 2.3 / Peppol BIS Pre-Award / OCDS 1.1.5 / EU eForms semantics.
+The payload fragments of the A2A Procurement Profile, published here for use by the patterns and fixtures in this repository. The profile defines procurement payload semantics for agent-to-agent traffic: four canonical fragments, each layered on existing UBL 2.3 / Peppol BIS Pre-Award / OCDS 1.1.5 / EU eForms semantics.
 
 | | |
 | --- | --- |
 | **Extension URI** | `https://spec.bidangelai.com/v0.1/` |
 | **Version** | v0.1 (draft; breaking changes expected until v1.0) |
 | **Author** | BidAngel ([@brainspacer](https://github.com/brainspacer)) |
-| **Co-signers** | Erik Newton (Concordia Protocol), Christian Magorrian (A2CN Protocol), by approving this PR |
 | **Authoritative source** | [bidangel/a2a-procurement-spec](https://github.com/bidangel/a2a-procurement-spec) |
 | **Discussion** | [a2aproject/A2A#1832](https://github.com/a2aproject/A2A/discussions/1832) |
 
@@ -27,7 +26,6 @@ Out of scope:
 
 - Session establishment, authority chain and mandate verification (A2CN).
 - Wire envelope, receipts, the `references[]` mechanism and base relationship verbs (Concordia).
-- The cross-protocol receipt types (`ApprovalReceipt`, `RejectionRecord`, `FulfillmentAttestation`). These are registered by the umbrella Registered Vocabulary Profile, which references this profile rather than absorbing it.
 - Any change to A2A core, the AgentCard schema or the task model.
 
 ## Fragments
@@ -49,7 +47,7 @@ Two supporting cross-maps cover the enumerations:
 Each crosswalk classes every field as exact, partial or novel against its UBL counterpart. The contexts apply one rule:
 
 - A field keeps the UBL IRI when the crosswalk marks it exact, or partial only because the profile carries one string where UBL allows several languages, and it corresponds to a single UBL element.
-- Every other field is defined under the profile namespace (`a2a:`). That covers enumerations, values flattened from a complex UBL element, fields with two candidate UBL elements, and novel fields.
+- Every other field is defined under the profile namespace (`bapp:`). That covers enumerations, values flattened from a complex UBL element, fields with two candidate UBL elements, and novel fields.
 
 Nested objects (`buyerRef`, `standardSchema`, `valueConstraints`) are opaque references at v0.1. Scoped contexts for them are planned for v0.2.
 
@@ -103,9 +101,8 @@ A fragment names its context:
 
 ## Provenance
 
-The files under `contexts/` and `crosswalks/` are copies of the same paths in [bidangel/a2a-procurement-spec](https://github.com/bidangel/a2a-procurement-spec) at commit `6523769`. That repository is authoritative. Changes are made there first and copied here; please do not edit the copies in place.
+The files under `contexts/` and `crosswalks/` are copies of the same paths in [bidangel/a2a-procurement-spec](https://github.com/bidangel/a2a-procurement-spec) at commit `a8f035c`. That repository is authoritative. Changes are made there first and copied here; please do not edit the copies in place.
 
 ## License
 
-- `contexts/`: Apache-2.0, as the rest of this repository.
-- `crosswalks/`: Creative Commons Attribution 4.0 International, as published upstream. See [LICENSE-DOCS](https://github.com/bidangel/a2a-procurement-spec/blob/main/LICENSE-DOCS).
+Apache-2.0, as the rest of this repository. That includes the copies under `crosswalks/`; the same crosswalks are published upstream under CC BY 4.0.
